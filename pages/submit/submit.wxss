@@ -1,0 +1,31 @@
+/* pages/submit/submit.wxss */
+
+button{
+  width: 35%;
+  margin-top: 30rpx;
+}
+
+.Name{
+  border: 2rpx solid black;
+  align-content: center;
+  text-align: left;
+  margin: 20rpx;
+  height: 5vh;
+}
+
+.Message{
+  border: 2rpx solid black;
+  align-content: center;
+  text-align: left;
+  margin: 20rpx;
+  height: 40vh;
+}
+
+.form{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

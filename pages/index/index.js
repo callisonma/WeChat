@@ -1,10 +1,13 @@
 //index.js
 //获取应用实例
 var app = getApp()
+const AV = require('../../utils/av-weapp-min.js');
+const FML = require('../../model/fml.js');
+
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {}
+    userInfo: {},
+    fmls: {}
   },
   //事件处理函数
   bindViewTap: function() {
@@ -17,6 +20,13 @@ Page({
       title: 'Le Wagon coding school',
       path: 'pages/index/index'
     }
+  },
+  onReady: function () {
+    var that = this
+    new AV.Query('FML')
+      .descending('createdAt')
+      .find()
+      .then(fmls => that.setData({fmls}))
   },
   onLoad: function () {
     console.log('onLoad')

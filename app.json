@@ -1,13 +1,34 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/submit/submit"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "FML",
+    "navigationBarTextStyle":"white"
+  },
+
+  "tabBar": {
+    "backgroundColor": "rgba(18,144,231,1)",
+    "borderStyle": "#D3D3D3",
+    "selectedColor": "white",
+    "color": "#131313",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "photo/home.png",
+        "selectedIconPath": "photo/home.png",
+        "text": "Home"  
+      },
+      {
+        "pagePath": "pages/submit/submit",
+        "iconPath": "photo/submit.png",
+        "selectedIconPath": "photo/submit.png",
+        "text": "Submit"
+      }
+    ]
   }
- 
 }

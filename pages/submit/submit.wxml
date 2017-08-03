@@ -1,0 +1,11 @@
+<!--pages/submit/submit.wxml-->
+<text>Your Story</text>
+
+<view class="form">
+  <form bindsubmit="bindFormSubmit">
+    <textarea class="Name" name="name"/>
+    <textarea class="Message" name="message"/>
+    <button type="primary" form-type="submit">Submit</button>
+  </form>
+</view>
+
